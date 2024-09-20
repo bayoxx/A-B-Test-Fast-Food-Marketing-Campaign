@@ -7,16 +7,16 @@ Note: I attached a more detailed report to this repository, or you can check it 
 A fast-food chain is preparing to introduce a new menu item but has yet to decide which of three potential marketing campaigns to use for promotion. The new item is launched in multiple locations across randomly selected markets to identify which campaign will drive the most sales. Each location implements a different campaign, and weekly sales of the new item are tracked for the first four weeks.
 
 **Goal** 
-Evaluate A/B testing results and decide which marketing strategy works the best.
+==Evaluate A/B testing results and decide which marketing strategy works the best.==
 
 **Note:** 
-The dataset is aggregated by LocationID, PromotionID and week. However, I aggregated by LocationID and PromotionID before conducting the statistical tests.
+==The dataset is aggregated by LocationID, PromotionID and week. However, I aggregated by LocationID and PromotionID before conducting the statistical tests.==
 
 Aggregating by LocationID and PromotionID before conducting statistical tests simplifies the data, reducing noise from weekly variations. This helps focus the analysis on differences between promotions across locations, leading to clearer insights and more reliable comparisons.
 
-Experiment Design
+**Experiment Design**
 
-Task Variables
+**Task Variables**
 
 The variables provided in the dataset include:
 - MarketID: unique identifier for market
