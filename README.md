@@ -176,29 +176,31 @@ Promotion 2 had the lowest mean sales, and its comparison with Promotion 3 shows
 ---
 **ANOVA Results:**
 The ANOVA test resulted in a p-value of 0.0037, which is below the threshold (α = 0.01). This indicates a statistically significant difference between at least one pair of promotions. In other words, not all promotions perform equally in driving sales.
-Post-Hoc Tukey's HSD Test:
+
+---
+**Post-Hoc Tukey's HSD Test:**
 The Tukey's HSD Test further identifies the specific pairs of promotions that have significant differences:
-Promotion 1 vs Promotion 2: Statistically significant difference (p = 0.001), indicating that Promotion 1 significantly outperformed Promotion 2.
-Promotion 2 vs Promotion 3: No significant difference (p = 0.671), suggesting that both performed similarly.
-Promotion 1 vs Promotion 3: No significant difference (p = 0.037), suggesting that both performed similarly.
+- Promotion 1 vs Promotion 2: Statistically significant difference (p = 0.001), indicating that Promotion 1 significantly outperformed Promotion 2.
+- Promotion 2 vs Promotion 3: No significant difference (p = 0.671), suggesting that both performed similarly.
+- Promotion 1 vs Promotion 3: No significant difference (p = 0.037), suggesting that both performed similarly.
 
 ---
 **Pairwise Comparison & Bonferroni Correction:**
 The Pairwise Comparison and Bonferroni Correction reveal that:
-Promotion 1 vs Promotion 2 is the only statistically significant pair under the more stringent Bonferroni correction. This reinforces the finding that Promotion 1 is significantly more effective than Promotion 2.
-There was no significant difference between Promotion 1 and Promotion 3, or between Promotion 2 and Promotion 3, under this correction.
+- Promotion 1 vs Promotion 2 is the only statistically significant pair under the more stringent Bonferroni correction. This reinforces the finding that Promotion 1 is significantly more effective than Promotion 2.
+- There was no significant difference between Promotion 1 and Promotion 3, or between Promotion 2 and Promotion 3, under this correction.
 
 ---
 **Linear Regression Results:**
 
-Market Size is the most significant predictor of sales, with larger markets consistently driving more sales. The positive coefficient (15.06) indicates that sales increase by about 15 units for each increase in market size level.
-Location ID has a small but statistically significant negative effect on sales, meaning certain locations (with higher IDs) might be underperforming.
-Age of Store and Week were not significant predictors of sales, suggesting they do not play a critical role in sales performance.
+- Market Size is the most significant predictor of sales, with larger markets consistently driving more sales. The positive coefficient (15.06) indicates that sales increase by about 15 units for each increase in market size level.
+- Location ID has a small but statistically significant negative effect on sales, meaning certain locations (with higher IDs) might be underperforming.
+- Age of Store and Week were not significant predictors of sales, suggesting they do not play a critical role in sales performance.
 
 **Conclusion:**
-Promotion 1 is the most effective marketing strategy based on pairwise comparisons, significantly outperforming Promotion 2. However, it performs similarly to Promotion 3.
-Promotion 2 is the weakest performer, as it was significantly outperformed by both Promotion 1 and Promotion 3.
-Market Size plays a critical role in the effectiveness of promotions, with larger markets driving higher sales.
+- Promotion 1 is the most effective marketing strategy based on pairwise comparisons, significantly outperforming Promotion 2. However, it performs similarly to Promotion 3.
+- Promotion 2 is the weakest performer, as it was significantly outperformed by both Promotion 1 and Promotion 3.
+- Market Size plays a critical role in the effectiveness of promotions, with larger markets driving higher sales.
 
 **Summary:**
 Promotion 1 generated the highest sales and was significantly better than Promotion 2, while Promotion 3 performed similarly to Promotion 1.
@@ -206,15 +208,17 @@ Market size is a key factor in sales performance, and location-specific factors 
 The age of the store and time (week) do not significantly affect sales.
 
 **Recommendations:**
-Adoption of Promotion 1 for the broader rollout, as it has consistently higher performance compared to Promotion 2 and performs similarly to Promotion 3.
-Investigatigation of underperforming locations (higher location IDs) to determine if there are specific challenges affecting sales at these sites.
-Focusing marketing efforts on larger markets where sales are significantly higher, and consider tailored strategies for smaller markets.
-While the age of the store and time (week) are not significant in this analysis, there should be continuous monitoring of these variables to ensure long-term consistency in performance.
+1. Adoption of Promotion 1 for the broader rollout, as it has consistently higher performance compared to Promotion 2 and performs similarly to Promotion 3.
+2. Investigatigation of underperforming locations (higher location IDs) to determine if there are specific challenges affecting sales at these sites.
+3. Focusing marketing efforts on larger markets where sales are significantly higher, and consider tailored strategies for smaller markets.
+4. While the age of the store and time (week) are not significant in this analysis, there should be continuous monitoring of these variables to ensure long-term consistency in performance.
 
 
 
 
+Note: I attached a more detailed report and the .sql file to this repository, or you can check it [here](https://docs.google.com/document/d/1CICzOzr1PZKkQZcmo6-8n4zekRmGX7MsKygdNgfhD84/edit?usp=sharing) and [here](https://github.com/bayoxx/Fast-Food-Marketing-Campaign-A-B-Test/blob/main/A%3AB%20testing%202-%20food%20marketing.sql).
 
+Task Source: Kaggle
 
 
 
