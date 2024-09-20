@@ -7,10 +7,10 @@ Note: I attached a more detailed report to this repository, or you can check it 
 A fast-food chain is preparing to introduce a new menu item but has yet to decide which of three potential marketing campaigns to use for promotion. The new item is launched in multiple locations across randomly selected markets to identify which campaign will drive the most sales. Each location implements a different campaign, and weekly sales of the new item are tracked for the first four weeks.
 
 **Goal** 
-==Evaluate A/B testing results and decide which marketing strategy works the best==.
+Evaluate A/B testing results and decide which marketing strategy works the best.
 
 **Note:** 
-==The dataset is aggregated by LocationID, PromotionID and week. However, I aggregated by LocationID and PromotionID before conducting the statistical tests.==
+The dataset is aggregated by LocationID, PromotionID and week. However, I aggregated by LocationID and PromotionID before conducting the statistical tests.
 
 Aggregating by LocationID and PromotionID before conducting statistical tests simplifies the data, reducing noise from weekly variations. This helps focus the analysis on differences between promotions across locations, leading to clearer insights and more reliable comparisons.
 
@@ -52,8 +52,8 @@ To carry out this test, I used the XLMiner Analysis ToolPak Add-on in Google She
 
 **Hypotheses**
 
-H0: M1 = M2 = M3 There is no difference between promotion averages
-H1: M1 != M2 = M3 At least one of the promotion averages is different
+- H0: M1 = M2 = M3 There is no difference between promotion averages
+- H1: M1 != M2 = M3 At least one of the promotion averages is different
 
 
 | Source of Variation | SS           | df  | MS           | F            | P-value | F crit     |
@@ -87,9 +87,9 @@ I used this [external calculator](https://astatsa.com/OneWay_Anova_with_TukeyHSD
 
 **Result Interpretation**
 
-Promotion 1 vs Promotion 2: Promotion 1 is significantly better than Promotion 2 in terms of sales.
-Promotion 1 vs Promotion 3: There is no significant difference between Promotion 1 and Promotion 3.
-Promotion 2 vs Promotion 3:  There is no significant difference between Promotion 2 and Promotion 3.
+- Promotion 1 vs Promotion 2: Promotion 1 is significantly better than Promotion 2 in terms of sales.
+- Promotion 1 vs Promotion 3: There is no significant difference between Promotion 1 and Promotion 3.
+- Promotion 2 vs Promotion 3:  There is no significant difference between Promotion 2 and Promotion 3.
 
 ---
 ### Test 3: Pairwise Comparisons and Bonferroni Correction. 
@@ -106,12 +106,10 @@ I used the data above to carry out my t-tests, using [Evan Miller’s 2 Sample T
 - Corrected α=0.01/3 ≈ 0.0033
   
 **Hypothesis**
-Null hypothesis (H0): The retention rate is the same for both groups (no difference). I.e H0 ​: p1​=p2​
+- Null hypothesis (H0): The retention rate is the same for both groups (no difference). I.e H0 ​: p1​=p2​
+- Alternative hypothesis (Ha​​): The retention rates are different between the two groups. i.e H1​ : p1≠p2
 
-Alternative hypothesis (Ha​​): The retention rates are different between the two groups. i.e H1​ : p1≠p2
 
-
-|         Pairwise comparison (α = 0.01) and Bonferroni correction (α = 0.0033)                 | 
 | Compared Metrics | Mean Difference (d) | Standard Error | p-value  | Statistical Significant? |
 |------------------|---------------------|----------------|----------|--------------------------|
 | 1 vs 2           | 43.078              | 12.9280        | 0.0013   | YES                      |
